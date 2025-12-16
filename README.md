@@ -7,7 +7,7 @@
 
 **BrainBridge** é um jogo de memória inovador desenvolvido com foco total em **acessibilidade web**, seguindo as diretrizes **WCAG 2.1 AA**. O projeto oferece dois modos de jogo (Individual e Cooperativo) com 8 níveis progressivos de dificuldade, sistema de autenticação, rankings e estatísticas detalhadas.
 
-## Índice
+### Índice
 
 - [Características](#características)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -21,14 +21,14 @@
 - [Testes de Acessibilidade](#testes-de-acessibilidade)
 - [Recursos de Acessibilidade](#recursos-de-acessibilidade)
 
-## Características
+### Características
 
-### Modos de Jogo
+#### Modos de Jogo
 
 - **Modo Individual**: Jogue sozinho e supere 8 níveis progressivos
 - **Modo Cooperativo**: Jogue com um amigo e trabalhem em equipa
 
-### Funcionalidades Principais
+#### Funcionalidades Principais
 
 - **8 Níveis de Dificuldade** com bónus progressivos
 - **Sistema de Autenticação** com JWT
@@ -39,7 +39,7 @@
 - **Progressão de Níveis** automática baseada em performance
 - **Responsive Design** - funciona em desktop, tablet e mobile
 
-### Acessibilidade (WCAG 2.1 AA)
+#### Acessibilidade (WCAG 2.1 AA)
 
 - **Skip Links** sempre visíveis (G1: WCAG 2.4.1)
 - **Alto Contraste** e modo daltónico
@@ -49,31 +49,31 @@
 - **Estrutura Semântica** HTML5
 - **Foco Visível** em todos os elementos interativos
 
-## Tecnologias Utilizadas
+### Tecnologias Utilizadas
 
-### Frontend
+#### Frontend
 - **React 18** (via CDN)
 - **Babel** (transpilação JSX)
 - **Tailwind CSS** (via CDN)
 - **HTML5/CSS3**
 - **JavaScript ES6+**
 
-### Backend
+#### Backend
 - **Node.js** (v18+)
 - **Express.js** (v5.1.0)
 - **JWT** (autenticação)
 - **bcrypt** (hash de passwords)
 
-### Base de Dados
+#### Base de Dados
 - **Microsoft SQL Server**
 - **mssql** (driver Node.js)
 
-### Ferramentas de Desenvolvimento
+#### Ferramentas de Desenvolvimento
 - **nodemon** (desenvolvimento)
 - **dotenv** (variáveis de ambiente)
 - **CORS** (Cross-Origin Resource Sharing)
 
-## Pré-requisitos
+### Pré-requisitos
 
 Antes de começar, certifique-se de ter instalado:
 
@@ -82,25 +82,25 @@ Antes de começar, certifique-se de ter instalado:
 - **npm** (vem incluído com Node.js)
 - **Git** - [Download](https://git-scm.com/)
 
-## Instalação
+### Instalação
 
-### 1. Clone o Repositório
+#### 1. Clone o Repositório
 
 ```bash
 git clone https://github.com/Carolpm28/BrainBridge.git
 cd BrainBridge/BrainBridgev_final
 ```
 
-### 2. Instale as Dependências do Backend
+#### 2. Instale as Dependências do Backend
 
 ```bash
 cd brainbridge-backend
 npm install
 ```
 
-### 3. Configure a Base de Dados
+#### 3. Configure a Base de Dados
 
-#### 3.1. Crie a Base de Dados
+##### 3.1. Crie a Base de Dados
 
 Execute o script SQL para criar a base de dados:
 
@@ -109,21 +109,21 @@ Execute o script SQL para criar a base de dados:
 sqlcmd -S localhost -i create-database.sql
 ```
 
-#### 3.2. Crie as Tabelas
+##### 3.2. Crie as Tabelas
 
 ```bash
 sqlcmd -S localhost -d BrainBridge -i create-tables.sql
 ```
 
-#### 3.3. (Opcional) Adicione Tabela de Estatísticas
+##### 3.3. (Opcional) Adicione Tabela de Estatísticas
 
 ```bash
 sqlcmd -S localhost -d BrainBridge -i tabelastatistics.sql
 ```
 
-## Configuração
+### Configuração
 
-### 1. Configure as Variáveis de Ambiente
+#### 1. Configure as Variáveis de Ambiente
 
 Crie um ficheiro `.env` na pasta `brainbridge-backend`:
 
@@ -147,18 +147,18 @@ NODE_ENV=development
 
 ⚠️ **IMPORTANTE**: Altere `JWT_SECRET` para uma chave secreta forte em produção!
 
-### 2. Configuração do SQL Server
+#### 2. Configuração do SQL Server
 
 Certifique-se de que:
 - O SQL Server está em execução
 - A autenticação SQL está ativada
 - O utilizador tem permissões na base de dados `BrainBridge`
 
-## Como Executar
+### Como Executar
 
-### Modo Desenvolvimento
+#### Modo Desenvolvimento
 
-#### 1. Inicie o Backend
+##### 1. Inicie o Backend
 
 ```bash
 cd brainbridge-backend
@@ -167,7 +167,7 @@ npm run dev
 
 O servidor estará disponível em: `http://localhost:3000`
 
-#### 2. Abra o Frontend
+##### 2. Abra o Frontend
 
 Abra o ficheiro `index.html` no navegador ou use um servidor local:
 
@@ -182,14 +182,14 @@ npx http-server -p 8080
 
 O jogo estará disponível em: `http://localhost:8080`
 
-### Modo Produção
+#### Modo Produção
 
 ```bash
 cd brainbridge-backend
 npm start
 ```
 
-## Estrutura do Projeto
+### Estrutura do Projeto
 
 ```
 BrainBridge/
@@ -219,33 +219,33 @@ BrainBridge/
 └── README.md                         # Este ficheiro
 ```
 
-## Acessibilidade
+### Acessibilidade
 
 O BrainBridge foi desenvolvido seguindo rigorosamente as **Diretrizes de Acessibilidade para Conteúdo Web (WCAG 2.1)** nível **AA**.
 
-### Conformidade WCAG 2.1
+#### Conformidade WCAG 2.1
 
-#### Princípio 1: Perceptível
+##### Princípio 1: Perceptível
 - **1.3.1 Informação e Relações**: Estrutura hierárquica de cabeçalhos (H42: Using h1-h6 to identify headings)
 - **1.4.1 Uso de Cor**: Modo daltónico disponível
 - **1.4.3 Contraste**: Rácio mínimo de 4.5:1
 
-#### Princípio 2: Operável
+##### Princípio 2: Operável
 - **2.1.1 Teclado**: Totalmente navegável por teclado
 - **2.4.1 Ignorar Blocos**: Skip link sempre visível (G1: Adding a link at the top of each page that goes directly to the main content area)
 - **2.4.5 Múltiplas Formas**: Links relacionados e navegação alternativa
 - **2.4.7 Foco Visível**: Indicadores de foco em todos os elementos
 
-#### Princípio 3: Compreensível
+##### Princípio 3: Compreensível
 - **3.1.1 Idioma da Página**: `lang="pt-PT"`
 - **3.2.1 Em Foco**: Sem mudanças de contexto inesperadas
 - **3.3.2 Etiquetas**: Labels descritivos em formulários
 
-#### Princípio 4: Robusto
+##### Princípio 4: Robusto
 - **4.1.2 Nome, Função, Valor**: ARIA labels apropriados
 - **4.1.3 Mensagens de Estado**: `role="status"`, `aria-live`
 
-### Recursos de Acessibilidade
+#### Recursos de Acessibilidade
 
 - **Atalhos de Teclado**
 - **Feedback Sonoro** (pode ser desativado)
@@ -253,9 +253,9 @@ O BrainBridge foi desenvolvido seguindo rigorosamente as **Diretrizes de Acessib
 - **Anúncios para Leitores de Ecrã**
 - **Foco Visível** com contornos de alto contraste
 
-## Como Jogar
+### Como Jogar
 
-### Modo Individual
+#### Modo Individual
 
 1. **Registe-se** ou **faça login**
 2. Selecione **"Modo Individual"**
@@ -264,21 +264,21 @@ O BrainBridge foi desenvolvido seguindo rigorosamente as **Diretrizes de Acessib
 5. **Complete o nível** para avançar automaticamente
 6. Níveis 5-8 têm **limite de tempo**!
 
-### Modo Cooperativo
+#### Modo Cooperativo
 
 1. Selecione **"Modo Cooperativo"**
 2. **Dois jogadores** alternam turnos
 3. Cada jogador tenta encontrar pares
 4. Quem encontrar **mais pares vence**!
 
-### Pontuação
+#### Pontuação
 
 - **Par correto**: +100 pontos
 - **Bónus de nível**: varia por nível (500-10000)
 - **Bónus de tempo**: nos níveis com limite
 - **Penalização**: -10 por erro
 
-### Níveis
+#### Níveis
 
 | Nível | Nome | Cartas | Bónus | Tempo Limite |
 |-------|------|--------|-------|--------------|
@@ -291,16 +291,16 @@ O BrainBridge foi desenvolvido seguindo rigorosamente as **Diretrizes de Acessib
 | 7 | Grande Mestre | 24 | 5000 | 1.5 minutos |
 | 8 | Lendário | 24 | 10000 | 1 minuto |
 
-## Testes de Acessibilidade
+### Testes de Acessibilidade
 
-### Ferramentas Recomendadas
+#### Ferramentas Recomendadas
 
 - **[AccessMonitor](https://accessmonitor.acessibilidade.gov.pt/)** - Validador automático português
 - **[WAVE WebAIM](https://wave.webaim.org/)** - Ferramenta de avaliação
 - **[axe DevTools](https://www.deque.com/axe/)** - Extensão para navegador
 - **[Lighthouse](https://web.dev/lighthouse/)** - Auditoria Google
 
-### Teste Manual
+#### Teste Manual
 
 1. **Navegação por Teclado**: Use `Tab`, `Enter`, `Espaço`, setas
 2. **Leitor de Ecrã**: Teste com NVDA (Windows) ou VoiceOver (Mac)
@@ -308,16 +308,16 @@ O BrainBridge foi desenvolvido seguindo rigorosamente as **Diretrizes de Acessib
 4. **Zoom**: Teste com 200% de zoom
 5. **Sem Rato**: Jogue apenas com teclado
 
-## Recursos de Acessibilidade
+### Recursos de Acessibilidade
 
-### Documentação Oficial
+#### Documentação Oficial
 
 - [Portal da Acessibilidade PT](https://www.acessibilidade.gov.pt/)
 - [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 - [MDN Web Accessibility](https://developer.mozilla.org/pt-BR/docs/Web/Accessibility)
 - [Decreto-Lei n.º 83/2018](https://www.acessibilidade.gov.pt/decreto/)
 
-### Jogos Inclusivos
+#### Jogos Inclusivos
 
 - [Game Accessibility Guidelines](https://gameaccessibilityguidelines.com/)
 - [Includification](https://www.includification.com/)
