@@ -245,13 +245,13 @@ O BrainBridge foi desenvolvido seguindo rigorosamente as **Diretrizes de Acessib
 ### Conformidade WCAG 2.1
 
 #### ✅ Princípio 1: Perceptível
-- **1.3.1 Informação e Relações**: Estrutura hierárquica de cabeçalhos (H42)
+- **1.3.1 Informação e Relações**: Estrutura hierárquica de cabeçalhos (H42: Using h1-h6 to identify headings)
 - **1.4.1 Uso de Cor**: Modo daltónico disponível
 - **1.4.3 Contraste**: Rácio mínimo de 4.5:1
 
 #### ✅ Princípio 2: Operável
 - **2.1.1 Teclado**: Totalmente navegável por teclado
-- **2.4.1 Ignorar Blocos**: Skip link sempre visível (G1)
+- **2.4.1 Ignorar Blocos**: Skip link sempre visível (G1: Adding a link at the top of each page that goes directly to the main content area)
 - **2.4.5 Múltiplas Formas**: Links relacionados e navegação alternativa
 - **2.4.7 Foco Visível**: Indicadores de foco em todos os elementos
 
@@ -657,14 +657,13 @@ Este projeto está sob a licença **ISC**.
 Encontrou um bug? Tem uma sugestão? 
 
 - Abra uma [Issue](https://github.com/Carolpm28/BrainBridge/issues)
-- Envie email: suporte@brainbridge.pt
 
 ---
 
 ## 📞 Contacto
 
-- **Email**: suporte@brainbridge.pt
 - **GitHub**: [@Carolpm28](https://github.com/Carolpm28)
+- **Issues**: [Reportar Problema](https://github.com/Carolpm28/BrainBridge/issues)
 
 ---
 
