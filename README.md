@@ -1,4 +1,4 @@
-# 🧠 BrainBridge - Jogo de Memória Acessível e Cooperativo
+# BrainBridge - Jogo de Memória Acessível e Cooperativo
 
 ![WCAG 2.1 AA](https://img.shields.io/badge/WCAG-2.1%20AA-blue)
 ![License](https://img.shields.io/badge/license-ISC-green)
@@ -7,56 +7,49 @@
 
 **BrainBridge** é um jogo de memória inovador desenvolvido com foco total em **acessibilidade web**, seguindo as diretrizes **WCAG 2.1 AA**. O projeto oferece dois modos de jogo (Individual e Cooperativo) com 8 níveis progressivos de dificuldade, sistema de autenticação, rankings e estatísticas detalhadas.
 
----
+## Índice
 
-## 📋 Índice
+- [Características](#características)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Configuração](#configuração)
+- [Como Executar](#como-executar)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Acessibilidade](#acessibilidade)
+- [Como Jogar](#como-jogar)
+- [Testes de Acessibilidade](#testes-de-acessibilidade)
+- [Recursos de Acessibilidade](#recursos-de-acessibilidade)
 
-- [Características](#-características)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Pré-requisitos](#-pré-requisitos)
-- [Instalação](#-instalação)
-- [Configuração](#-configuração)
-- [Como Executar](#-como-executar)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Acessibilidade](#-acessibilidade)
-- [API Endpoints](#-api-endpoints)
-- [Base de Dados](#-base-de-dados)
-- [Contribuir](#-contribuir)
-- [Licença](#-licença)
+## Características
 
----
-
-## ✨ Características
-
-### 🎮 Modos de Jogo
+### Modos de Jogo
 
 - **Modo Individual**: Jogue sozinho e supere 8 níveis progressivos
 - **Modo Cooperativo**: Jogue com um amigo e trabalhem em equipa
 
-### 🎯 Funcionalidades Principais
+### Funcionalidades Principais
 
-- ✅ **8 Níveis de Dificuldade** com bónus progressivos
-- ✅ **Sistema de Autenticação** com JWT
-- ✅ **Rankings Globais** por modo de jogo
-- ✅ **Estatísticas Detalhadas** (total de jogos, pontuação média, melhor tempo)
-- ✅ **Configurações Personalizáveis** (som, modo daltónico)
-- ✅ **Limite de Tempo** nos níveis avançados (5-8)
-- ✅ **Progressão de Níveis** automática baseada em performance
-- ✅ **Responsive Design** - funciona em desktop, tablet e mobile
+- **8 Níveis de Dificuldade** com bónus progressivos
+- **Sistema de Autenticação** com JWT
+- **Rankings Globais** por modo de jogo
+- **Estatísticas Detalhadas** (total de jogos, pontuação média, melhor tempo)
+- **Configurações Personalizáveis** (som, modo daltónico)
+- **Limite de Tempo** nos níveis avançados (5-8)
+- **Progressão de Níveis** automática baseada em performance
+- **Responsive Design** - funciona em desktop, tablet e mobile
 
-### ♿ Acessibilidade (WCAG 2.1 AA)
+### Acessibilidade (WCAG 2.1 AA)
 
-- 🔍 **Skip Links** sempre visíveis (G1: WCAG 2.4.1)
-- 🎨 **Alto Contraste** e modo daltónico
-- ⌨️ **Navegação por Teclado** completa
-- 🔊 **Suporte para Leitores de Ecrã** (ARIA labels)
-- 📱 **Design Responsivo** e adaptável
-- 🏷️ **Estrutura Semântica** HTML5
-- 🎯 **Foco Visível** em todos os elementos interativos
+- **Skip Links** sempre visíveis (G1: WCAG 2.4.1)
+- **Alto Contraste** e modo daltónico
+- **Navegação por Teclado** completa
+- **Suporte para Leitores de Ecrã** (ARIA labels)
+- **Design Responsivo** e adaptável
+- **Estrutura Semântica** HTML5
+- **Foco Visível** em todos os elementos interativos
 
----
-
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Frontend
 - **React 18** (via CDN)
@@ -80,9 +73,7 @@
 - **dotenv** (variáveis de ambiente)
 - **CORS** (Cross-Origin Resource Sharing)
 
----
-
-## 📦 Pré-requisitos
+## Pré-requisitos
 
 Antes de começar, certifique-se de ter instalado:
 
@@ -91,9 +82,7 @@ Antes de começar, certifique-se de ter instalado:
 - **npm** (vem incluído com Node.js)
 - **Git** - [Download](https://git-scm.com/)
 
----
-
-## 🚀 Instalação
+## Instalação
 
 ### 1. Clone o Repositório
 
@@ -132,9 +121,7 @@ sqlcmd -S localhost -d BrainBridge -i create-tables.sql
 sqlcmd -S localhost -d BrainBridge -i tabelastatistics.sql
 ```
 
----
-
-## ⚙️ Configuração
+## Configuração
 
 ### 1. Configure as Variáveis de Ambiente
 
@@ -167,9 +154,7 @@ Certifique-se de que:
 - A autenticação SQL está ativada
 - O utilizador tem permissões na base de dados `BrainBridge`
 
----
-
-## 🎯 Como Executar
+## Como Executar
 
 ### Modo Desenvolvimento
 
@@ -204,9 +189,7 @@ cd brainbridge-backend
 npm start
 ```
 
----
-
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 BrainBridge/
@@ -236,316 +219,41 @@ BrainBridge/
 └── README.md                         # Este ficheiro
 ```
 
----
-
-## ♿ Acessibilidade
+## Acessibilidade
 
 O BrainBridge foi desenvolvido seguindo rigorosamente as **Diretrizes de Acessibilidade para Conteúdo Web (WCAG 2.1)** nível **AA**.
 
 ### Conformidade WCAG 2.1
 
-#### ✅ Princípio 1: Perceptível
+#### Princípio 1: Perceptível
 - **1.3.1 Informação e Relações**: Estrutura hierárquica de cabeçalhos (H42: Using h1-h6 to identify headings)
 - **1.4.1 Uso de Cor**: Modo daltónico disponível
 - **1.4.3 Contraste**: Rácio mínimo de 4.5:1
 
-#### ✅ Princípio 2: Operável
+#### Princípio 2: Operável
 - **2.1.1 Teclado**: Totalmente navegável por teclado
 - **2.4.1 Ignorar Blocos**: Skip link sempre visível (G1: Adding a link at the top of each page that goes directly to the main content area)
 - **2.4.5 Múltiplas Formas**: Links relacionados e navegação alternativa
 - **2.4.7 Foco Visível**: Indicadores de foco em todos os elementos
 
-#### ✅ Princípio 3: Compreensível
+#### Princípio 3: Compreensível
 - **3.1.1 Idioma da Página**: `lang="pt-PT"`
 - **3.2.1 Em Foco**: Sem mudanças de contexto inesperadas
 - **3.3.2 Etiquetas**: Labels descritivos em formulários
 
-#### ✅ Princípio 4: Robusto
+#### Princípio 4: Robusto
 - **4.1.2 Nome, Função, Valor**: ARIA labels apropriados
 - **4.1.3 Mensagens de Estado**: `role="status"`, `aria-live`
 
 ### Recursos de Acessibilidade
 
-- 🎹 **Atalhos de Teclado**
-- 🔊 **Feedback Sonoro** (pode ser desativado)
-- 👁️ **Modo Daltónico**
-- 📢 **Anúncios para Leitores de Ecrã**
-- 🎯 **Foco Visível** com contornos de alto contraste
+- **Atalhos de Teclado**
+- **Feedback Sonoro** (pode ser desativado)
+- **Modo Daltónico**
+- **Anúncios para Leitores de Ecrã**
+- **Foco Visível** com contornos de alto contraste
 
----
-
-## 🌐 API Endpoints
-
-### Autenticação
-
-#### Registar Novo Utilizador
-```http
-POST /api/users
-Content-Type: application/json
-
-{
-  "username": "jogador1",
-  "email": "jogador@exemplo.com",
-  "password": "senha_segura"
-}
-```
-
-#### Login
-```http
-POST /api/login
-Content-Type: application/json
-
-{
-  "email": "jogador@exemplo.com",
-  "password": "senha_segura"
-}
-```
-
-**Resposta:**
-```json
-{
-  "success": true,
-  "data": {
-    "token": "eyJhbGciOiJIUzI1NiIs...",
-    "user": {
-      "userId": 1,
-      "username": "jogador1",
-      "email": "jogador@exemplo.com"
-    }
-  }
-}
-```
-
-#### Logout
-```http
-POST /api/logout
-Authorization: Bearer {token}
-```
-
-#### Verificar Token
-```http
-GET /api/auth/verify
-Authorization: Bearer {token}
-```
-
-#### Obter Dados do Utilizador
-```http
-GET /api/me
-Authorization: Bearer {token}
-```
-
----
-
-### Jogos
-
-#### Iniciar Novo Jogo
-```http
-POST /api/games/start
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "gameMode": "individual",
-  "level": 1
-}
-```
-
-#### Finalizar Jogo
-```http
-POST /api/games/finish
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "gameMode": "individual",
-  "level": 1,
-  "score": 1500,
-  "timeSeconds": 45,
-  "completed": true
-}
-```
-
-#### Completar Jogo (Atualizar Estatísticas)
-```http
-POST /api/games/complete
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "gameMode": "individual",
-  "level": 1,
-  "score": 1500,
-  "timeSeconds": 45,
-  "completed": true
-}
-```
-
-#### Listar Jogos do Utilizador
-```http
-GET /api/games?gameMode=individual&limit=10&offset=0
-Authorization: Bearer {token}
-```
-
-#### Obter Estatísticas Detalhadas
-```http
-GET /api/games/statistics2
-Authorization: Bearer {token}
-```
-
-#### Obter Jogos Recentes
-```http
-GET /api/games/recent
-```
-
----
-
-### Perfil
-
-#### Obter Perfil Próprio
-```http
-GET /api/profile
-Authorization: Bearer {token}
-```
-
-#### Obter Perfil por ID
-```http
-GET /api/profile/:id
-```
-
-#### Atualizar Progresso
-```http
-POST /api/profile/progress
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "individualLevel": 2,
-  "individualHighscore": 2500,
-  "cooperativeLevel": 1,
-  "cooperativeHighscore": 1800
-}
-```
-
----
-
-### Rankings
-
-#### Obter Rankings
-```http
-GET /api/rankings?gameMode=individual&limit=10
-```
-
----
-
-### Configurações de Níveis
-
-#### Listar Configurações
-```http
-GET /api/levelConfigurations
-```
-
-#### Adicionar/Atualizar Configuração
-```http
-POST /api/levelConfigurations
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "gameMode": "individual",
-  "level": 1,
-  "name": "Iniciante",
-  "cards": 12,
-  "bonus": 500,
-  "timeLimit": 0
-}
-```
-
----
-
-## 🗄️ Base de Dados
-
-### Tabelas Principais
-
-#### **Users**
-Armazena informações dos utilizadores e seu progresso.
-
-| Campo | Tipo | Descrição |
-|-------|------|-----------|
-| UserID | INT (PK) | Identificador único |
-| Username | NVARCHAR(100) | Nome do utilizador |
-| Email | NVARCHAR(255) | Email (único) |
-| PasswordHash | NVARCHAR(255) | Hash da senha |
-| Salt | NVARCHAR(100) | Salt do bcrypt |
-| IndividualLevel | INT | Nível individual atual |
-| IndividualHighscore | INT | Recorde individual |
-| CooperativeLevel | INT | Nível cooperativo atual |
-| CooperativeHighscore | INT | Recorde cooperativo |
-| TotalGamesPlayed | INT | Total de jogos |
-| SoundEnabled | BIT | Som ativado |
-| ColorBlindMode | BIT | Modo daltónico |
-
-#### **Games**
-Regista cada jogo concluído.
-
-| Campo | Tipo | Descrição |
-|-------|------|-----------|
-| GameID | INT (PK) | Identificador único |
-| UserID | INT (FK) | Referência ao utilizador |
-| GameMode | NVARCHAR(20) | individual/cooperative |
-| Level | INT | Nível jogado |
-| Score | INT | Pontuação obtida |
-| TimeSeconds | INT | Tempo em segundos |
-| Completed | BIT | Jogo concluído |
-| Player1Score | INT | Pontuação jogador 1 (coop) |
-| Player2Score | INT | Pontuação jogador 2 (coop) |
-| Winner | INT | Vencedor (coop): 0=empate, 1=P1, 2=P2 |
-| LevelBonus | INT | Bónus do nível |
-| PlayedAt | DATETIME | Data/hora do jogo |
-
-#### **UserStatistics2**
-Estatísticas agregadas dos utilizadores.
-
-| Campo | Tipo | Descrição |
-|-------|------|-----------|
-| UserID | INT (FK) | Referência ao utilizador |
-| TotalGames | INT | Total de jogos |
-| IndividualGames | INT | Jogos individuais |
-| CooperativeGames | INT | Jogos cooperativos |
-| BestTimeIndividual | INT | Melhor tempo (individual) |
-| BestTimeCooperative | INT | Melhor tempo (cooperativo) |
-| AverageScore | FLOAT | Pontuação média |
-| BestScore | INT | Melhor pontuação |
-| StreakCurrent | INT | Sequência atual |
-| StreakBest | INT | Melhor sequência |
-
-#### **LevelConfigurations**
-Configurações de cada nível.
-
-| Campo | Tipo | Descrição |
-|-------|------|-----------|
-| ConfigID | INT (PK) | Identificador único |
-| GameMode | NVARCHAR(20) | individual/cooperative |
-| Level | INT | Número do nível |
-| Name | NVARCHAR(100) | Nome do nível |
-| Cards | INT | Quantidade de cartas |
-| Bonus | INT | Bónus do nível |
-| TimeLimit | INT | Limite de tempo (segundos, 0=sem limite) |
-
-#### **Rankings**
-Melhores pontuações globais.
-
-| Campo | Tipo | Descrição |
-|-------|------|-----------|
-| RankingID | INT (PK) | Identificador único |
-| UserID | INT (FK) | Referência ao utilizador |
-| GameMode | NVARCHAR(20) | individual/cooperative |
-| Score | INT | Pontuação |
-| Level | INT | Nível |
-| PlayedAt | DATETIME | Data/hora |
-
----
-
-## 🎮 Como Jogar
+## Como Jogar
 
 ### Modo Individual
 
@@ -583,9 +291,7 @@ Melhores pontuações globais.
 | 7 | Grande Mestre | 24 | 5000 | 1.5 minutos |
 | 8 | Lendário | 24 | 10000 | 1 minuto |
 
----
-
-## 🧪 Testes de Acessibilidade
+## Testes de Acessibilidade
 
 ### Ferramentas Recomendadas
 
@@ -602,40 +308,7 @@ Melhores pontuações globais.
 4. **Zoom**: Teste com 200% de zoom
 5. **Sem Rato**: Jogue apenas com teclado
 
----
-
-## 🤝 Contribuir
-
-Contribuições são bem-vindas! Para contribuir:
-
-1. **Fork** o projeto
-2. Crie uma **branch** para sua feature (`git checkout -b feature/MinhaFeature`)
-3. **Commit** suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)
-4. **Push** para a branch (`git push origin feature/MinhaFeature`)
-5. Abra um **Pull Request**
-
-### Diretrizes
-
-- Mantenha a conformidade **WCAG 2.1 AA**
-- Adicione testes quando aplicável
-- Documente novas funcionalidades
-- Siga o estilo de código existente
-
----
-
-## 📝 Licença
-
-Este projeto está sob a licença **ISC**.
-
----
-
-## 👥 Autores
-
-- **Carolina** - [@Carolpm28](https://github.com/Carolpm28)
-
----
-
-## 📚 Recursos de Acessibilidade
+## Recursos de Acessibilidade
 
 ### Documentação Oficial
 
@@ -650,37 +323,10 @@ Este projeto está sob a licença **ISC**.
 - [Includification](https://www.includification.com/)
 - [Accessible Games](https://accessible.games/)
 
----
-
-## 🐛 Reportar Problemas
-
-Encontrou um bug? Tem uma sugestão? 
-
-- Abra uma [Issue](https://github.com/Carolpm28/BrainBridge/issues)
-
----
-
-## 📞 Contacto
-
-- **GitHub**: [@Carolpm28](https://github.com/Carolpm28)
-- **Issues**: [Reportar Problema](https://github.com/Carolpm28/BrainBridge/issues)
-
----
-
-## 🌟 Agradecimentos
-
-Agradecimentos especiais a:
-
-- Comunidade WCAG pela documentação excelente
-- Portal da Acessibilidade de Portugal
-- Todos os testadores que ajudaram a melhorar a acessibilidade
-
----
-
 <div align="center">
 
 **BrainBridge** © 2025 - Jogo de memória desenvolvido seguindo as diretrizes WCAG 2.1 AA
 
-[⬆ Voltar ao topo](#-brainbridge---jogo-de-memória-acessível-e-cooperativo)
+[Voltar ao topo](#brainbridge---jogo-de-memória-acessível-e-cooperativo)
 
 </div>
